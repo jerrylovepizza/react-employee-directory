@@ -1,0 +1,7 @@
+ul li a {
+  color: #dcdcdc;
+}
+
+ul li a:hover {
+  color: #fff;
+}
