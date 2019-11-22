@@ -14,6 +14,7 @@ function EmployeeList(props) {
           <th>Gender</th>
           <th>Department</th>
           <th>Start Date</th>
+          <th>Days Worked</th>
         </tr>
       </thead>
       <tbody>
@@ -28,6 +29,7 @@ function EmployeeList(props) {
               <td>{emp.gender}</td>
               <td>{emp.department}</td>
               <td>{emp.date}</td>
+              <td>{emp.daysPassed}</td>
             </tr>
           ))
         }

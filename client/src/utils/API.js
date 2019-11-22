@@ -1,6 +1,6 @@
 export default {
   getEmployees: function() {
-    return fetch('http://api.alperg.com/employee')
+    return fetch('/api/employees')
       .then((response) => response.json())
   }
 };
