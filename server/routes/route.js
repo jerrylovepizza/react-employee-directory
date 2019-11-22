@@ -7,7 +7,7 @@ router.route("/api/employees")
 
 router.use(function(req, res) {
   console.log("React app lives here:", path.join(__dirname, "../../client/build/index.html"));
-  res.send(path.join(__dirname, "../../client/build/index.html"));
+  res.sendFile(path.join(__dirname, "../../client/build/index.html"));
 });
 
 module.exports = router;
