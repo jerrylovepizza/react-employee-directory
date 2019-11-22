@@ -22,7 +22,7 @@ class Employee extends React.Component {
       this.fetchEmployees();
     } else {
 
-      const filteredList = this.state.allEmployees.filter(emp => emp.firstName.indexOf(searchTerm) > -1);
+      const filteredList = this.state.allEmployees.filter(emp => emp.firstName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1);
 
       this.setState({
         employees: filteredList
