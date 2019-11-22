@@ -4,7 +4,7 @@ const app = express();
 const router = require("./routes/route");
 app.use(express.json());
 
-const PORT = 5555;
+const PORT = process.env.PORT || 5555;
 
 if(process.env.NODE_ENV === "production") {
   app.use("/static", express.static(path.join(__dirname, "../../client/build/static")));
