@@ -7,7 +7,7 @@ function Counter() {
   const increment = () => setCounter(counter + 1);
 
   return(
-    <span style={{ marginLeft: 420 }}>
+    <span style={{ marginLeft: 220 }}>
       <span style={{ marginRight: 10 }}>{counter}</span>
       <Button color="warning" onClick={increment}>Increment</Button>
     </span>
