@@ -3,7 +3,7 @@ import { Table } from 'reactstrap';
 
 function EmployeeList(props) {
   return (
-    <Table striped>
+    <Table striped hover>
       <thead>
         <tr>
           <th>#</th>
